@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections; 
 
 public class TriggerManager : MonoBehaviour
 {
     public GameObject objectToReveal; // The third object to reveal
     private bool trigger1Activated = false;
     private bool trigger2Activated = false;
+    public float activationDelay = 5;
 
     // This function will be called from the trigger scripts
     public void TriggerActivated(int triggerID)
@@ -21,7 +23,9 @@ public class TriggerManager : MonoBehaviour
         // Check if both triggers are activated
         if (trigger1Activated && trigger2Activated)
         {
-            RevealObject();
+
+            StartCoroutine(ActivateThirdObjectWithDelay());
+
         }
     }
 
@@ -29,5 +33,14 @@ public class TriggerManager : MonoBehaviour
     private void RevealObject()
     {
         objectToReveal.SetActive(true);
+    }
+
+    IEnumerator ActivateThirdObjectWithDelay()
+    {
+        Debug.Log("Activating the third object in " + activationDelay + " seconds...");
+        yield return new WaitForSeconds(activationDelay); // Wait for the specified time
+        RevealObject();
+        
+        
     }
 }

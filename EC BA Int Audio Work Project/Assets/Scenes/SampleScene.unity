@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 361162061}
   - component: {fileID: 361162060}
   - component: {fileID: 361162064}
+  - component: {fileID: 361162065}
   m_Layer: 0
   m_Name: No
   m_TagString: Untagged
@@ -566,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 361162059}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.53, y: 1.1, z: 5.41}
+  m_LocalPosition: {x: 1.85, y: 1.1, z: 5.41}
   m_LocalScale: {x: 1, y: 1, z: 0.32789}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -586,6 +587,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerManager: {fileID: 1101408272}
+--- !u!114 &361162065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361162059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1707240249
+      Data2: 1320004014
+      Data3: 2061863072
+      Data4: 153280256
+    Path: event:/No
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +943,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &897525571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897525565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1101408271
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToReveal: {fileID: 1926670367}
+  activationDelay: 7
 --- !u!4 &1101408273
 Transform:
   m_ObjectHideFlags: 0
@@ -969,6 +1015,7 @@ GameObject:
   - component: {fileID: 1189512033}
   - component: {fileID: 1189512032}
   - component: {fileID: 1189512036}
+  - component: {fileID: 1189512037}
   m_Layer: 0
   m_Name: Yes
   m_TagString: Untagged
@@ -1056,7 +1103,7 @@ Transform:
   m_GameObject: {fileID: 1189512031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9173, y: 1.0849006, z: 2.58}
+  m_LocalPosition: {x: 3.68, y: 1.0849006, z: 1.68}
   m_LocalScale: {x: 1, y: 1, z: 0.064155}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1076,6 +1123,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerManager: {fileID: 1101408272}
+--- !u!114 &1189512037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189512031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -593274835
+      Data2: 1319009887
+      Data3: -1217468520
+      Data4: -78910895
+    Path: event:/Yes
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1295670481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1287,7 @@ Transform:
   m_GameObject: {fileID: 1373455799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1748,7 +1826,7 @@ Transform:
   m_GameObject: {fileID: 1926670367}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 1.1, z: 10.8}
+  m_LocalPosition: {x: -0.53, y: 1.1, z: 10.8}
   m_LocalScale: {x: 1, y: 1, z: 0.21211772}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1791,6 +1869,11 @@ PrefabInstance:
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409497, guid: f6d148d888ffbf54b9afe9936dfaec1f,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
@@ -1861,6 +1944,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 897525567}
+    - targetCorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 897525571}
   m_SourcePrefab: {fileID: 100100000, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
 --- !u!1001 &2095319655
 PrefabInstance:
